@@ -16,10 +16,44 @@
 </head>
 <body>
 
-    <h1>Page Title</h1>
+    <h1>Portfolio</h1>
 
-    <!-- Your content goes here -->
-
+    <div>
+        <h3>About Me</h3>
+        <p>
+            Hey, I’m Lukas. I love working with computers and electronics — whether that’s building something useful for my family, experimenting with embedded systems, or reverse-engineering tech to see how it ticks. I just graduated with my degree in Computer Science at 19, and I’m always chasing new things to learn and create.
+        </p>
+    </div>
+    <div>
+        <h3>Interests</h3>
+        <p>
+            My interests center around electronics, embedded systems, and low-level computing. I enjoy working close to the hardware, which is why I prefer using the terminal with tools like NeoVim for programming and GDB for debugging, rather than relying on complex IDEs. I’m passionate about reverse engineering, from disassembling routers and analyzing firmware to uncovering vulnerabilities. I also enjoy programming microcontrollers to interact with mechanical systems — blending software and hardware is where I find the most excitement.
+        </p>
+    </div>
+    <div>
+        <div>
+            <h4>Remote Macro</h4>
+            <p>
+                For this project, I combined <b>hardware reverse engineering</b> with <b>embedded software development</b>. I began by using a <b>logic analyzer</b> to capture IR signals from a remote control, then wrote a <b>C program</b> to translate the raw ones and zeros into readable signal patterns.
+                <br>
+                After decoding the hardware signals, I moved to emulation on an <b>Arduino</b>. The first version could send a single signal, but through iterative design I expanded it to handle <b>sequences of signals (macros)</b>. One design challenge I encountered was: <i>“What if my macro opens an app that takes time to load — how do I account for that delay?”</i>
+                <br>
+                The solution was a <b>2D array structure</b>, where one index represented the signal and the other represented the delay. This made it possible to create macros with precise timing. In the next iteration, I added the ability to <b>dynamically create, edit, and save macros</b> using the Arduino’s <b>EEPROM</b>, ensuring persistence across reboots.
+                <br>
+                To make it user-friendly, I integrated a <b>simple LCD interface</b>, which displayed the current macro, the signal index being modified, and prompted for delay input. This allowed for on-device macro editing without needing to reflash the code.
+            </p>
+        </div>
+        <div>
+            <h4>Project 2</h4>
+            <p>
+            </p>
+        </div>
+        <div>
+            <h4>Project 3</h4>
+            <p>
+            </p>
+        </div>
+    </div>
     <script src="scripts.js"></script>
 
 </body>
